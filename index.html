@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cubic Bezier exploration</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+
+  <body class="">
+    <div id="bezier">
+      <canvas id="canvas" width="750" height="750"></canvas>
+
+      <div class="controls">
+        <div class="start">
+          <h3>Start Point</h3>
+          <label for="startX">X</label>
+          <input type=range min="-100" max="100" data-default-value="0" id="startX" data-name="start" data-axis="x">
+
+          <label for="startY">Y</label>
+          <input type=range min="-100" max="100" data-default-value="0" id="startY" data-name="start" data-axis="y">
+
+          <input type="text" value="0,0" disabled>
+        </div>
+
+        <div class="mid">
+          <h3>Mid Point</h3>
+          <label for="midX">X</label>
+          <input type=range min="-100" max="100" data-default-value="50" id="midX" data-name="mid" data-axis="x">
+
+          <label for="midY">Y</label>
+          <input type=range min="-100" max="100" data-default-value="50" id="midY" data-name="mid" data-axis="y">
+
+          <input type="text" value="0,0" disabled>
+        </div>
+
+        <div class="end">
+          <h3>End Point</h3>
+          <label for="endX">X</label>
+          <input type=range min="-100" max="100" data-default-value="100" id="endX" data-name="end" data-axis="x">
+
+          <label for="endY">Y</label>
+          <input type=range min="-100" max="100" data-default-value="100" id="endY" data-name="end" data-axis="y">
+
+          <input type="text" value="0,0" disabled>
+        </div>
+
+       <input id="reset" type="button" value="reset">
+      </div>
+
+    </div>
+  </body>
+
+  <script type="text/javascript" src="./script.js" defer></script>
+</html>
